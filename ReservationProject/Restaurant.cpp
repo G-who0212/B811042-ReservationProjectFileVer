@@ -63,7 +63,7 @@ void Restaurant::RestaurantReservation(RestaurantInfo &rMember, RestaurantWalkIn
 			else if (whatTime == 5) tTime = "8시~9시";
 			else if (whatTime == 6) tTime = "9시~10시";
 			string tSeat = to_string(whatSeat);
-			string data = "식당 예약 프로그램 : " + rMember.getInfoName() + "님은" + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
+			string data = "식당 예약 프로그램 : " + rMember.getInfoName() + "님은" + ' ' + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
 			ofstream fout("reservationData.txt", ios::out | ios::app);
 			fout << data << endl;
 			fout.close();
@@ -91,7 +91,7 @@ void Restaurant::RestaurantReservation(RestaurantInfo &rMember, RestaurantWalkIn
 			else if (whatTime == 5) tTime = "8시~9시";
 			else if (whatTime == 6) tTime = "9시~10시";
 			string tSeat = to_string(whatSeat);
-			string data = "식당 예약 프로그램 : " + rMember.getInfoName() + "님은" + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
+			string data = "식당 예약 프로그램 : " + rMember.getInfoName() + "님은" + ' ' + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
 			ofstream fout("reservationData.txt", ios::out | ios::app);
 			fout << data << endl;
 			fout.close();
@@ -114,7 +114,7 @@ void Restaurant::RestaurantReservation(RestaurantInfo &rMember, RestaurantWalkIn
 					else if (whatTime == 5) tTime = "8시~9시";
 					else if (whatTime == 6) tTime = "9시~10시";
 					string tSeat = to_string(7);
-					string data = "식당 예약 프로그램 : " + rMember.getInfoName() + "님은" + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
+					string data = "식당 예약 프로그램 : " + rMember.getInfoName() + "님은" + ' ' + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
 					ofstream fout("reservationData.txt", ios::out | ios::app);
 					fout << data << endl;
 					fout.close();

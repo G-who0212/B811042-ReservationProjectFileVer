@@ -77,7 +77,7 @@ void Airplane::AirplaneReservation(AirplaneInfo &aMember) {
 		else if (goTime == 2)tTime = "12시";
 		else if (goTime == 3)tTime = "17시";
 		string tSeat = to_string(goSeatNum);
-		string data1 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
+		string data1 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + ' ' + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
 		ofstream fout("reservationData.txt", ios::out | ios::app);
 		fout << data1 << endl;
 		fout.close();
@@ -120,7 +120,7 @@ void Airplane::AirplaneReservation(AirplaneInfo &aMember) {
 		else if (comeTime == 2)tTime2 = "12시";
 		else if (comeTime == 3)tTime2 = "17시";
 		string tSeat2 = to_string(comeSeatNum);
-		string data2 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + tDate2 + " " + tTime2 + ' ' + tSeat2 + "번 자리를 예약하였습니다.";
+		string data2 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + ' ' + tDate2 + " " + tTime2 + ' ' + tSeat2 + "번 자리를 예약하였습니다.";
 		ofstream fout2("reservationData.txt", ios::out | ios::app);
 		fout2 << data2 << endl;
 		fout2.close();
@@ -164,7 +164,7 @@ void Airplane::AirplaneReservation(AirplaneInfo &aMember) {
 		else if (time == 2)tTime3 = "12시";
 		else if (time == 3)tTime3 = "17시";
 		string tSeat3 = to_string(seatNum);
-		string data3 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + tDate3 + " " + tTime3 + ' ' + tSeat3 + "번 자리를 예약하였습니다.";
+		string data3 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + ' ' + tDate3 + " " + tTime3 + ' ' + tSeat3 + "번 자리를 예약하였습니다.";
 		ofstream fout3("reservationData.txt", ios::out | ios::app);
 		fout3 << data3 << endl;
 		fout3.close();
@@ -210,7 +210,7 @@ void Airplane::AirplaneCancel(AirplaneInfo &aMember) {
 	else if (time == 2)tTime4 = "12시";
 	else if (time == 3)tTime4 = "17시";
 	string tSeat4 = to_string(seatNum);
-	string data4 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + tDate4 + " " + tTime4 + ' ' + tSeat4 + "번 자리를 예약을 취소하였습니다.";
+	string data4 = "비행기 좌석 예약 프로그램 : " + aMember.getInfoName() + "님은" + ' ' + tDate4 + " " + tTime4 + ' ' + tSeat4 + "번 자리를 예약을 취소하였습니다.";
 	ofstream fout4("reservationData.txt", ios::out | ios::app);
 	fout4 << data4 << endl;
 	fout4.close();

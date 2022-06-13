@@ -111,7 +111,7 @@ void Library::differentGender(int newDate, int newTime[], int newSeatNum, int i,
 		string tDate = "3월 " + to_string(newDate) + "일";
 		string tTime = to_string(8 + newTime[i]) +  "~" + to_string(9 + newTime[i]);
 		string tSeat = to_string(newSeatNum);
-		string data1 = "도서관 예약 프로그램 : " + lMember.getInfoName() + "님은" + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
+		string data1 = "도서관 예약 프로그램 : " + lMember.getInfoName() + "님은" + ' ' + tDate + " " + tTime + ' ' + tSeat + "번 자리를 예약하였습니다.";
 		ofstream fout("reservationData.txt", ios::out | ios::app);
 		fout << data1 << endl;
 		fout.close();
